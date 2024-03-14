@@ -31,12 +31,11 @@ public class ModuleTest extends TestCase {
 
     public static class MyModuel implements Module {
 
-        @Override
         public ObjectDeserializer createDeserializer(ParserConfig config, Class type) {
             return MiscCodec.instance;
         }
 
-        @Override
+        
         public ObjectSerializer createSerializer(SerializeConfig config, Class type) {
             return MiscCodec.instance;
         }
@@ -44,12 +43,12 @@ public class ModuleTest extends TestCase {
 
     public static class MyModuel2 implements Module {
 
-        @Override
+        
         public ObjectDeserializer createDeserializer(ParserConfig config, Class type) {
             return null;
         }
 
-        @Override
+        
         public ObjectSerializer createSerializer(SerializeConfig config, Class type) {
             return null;
         }

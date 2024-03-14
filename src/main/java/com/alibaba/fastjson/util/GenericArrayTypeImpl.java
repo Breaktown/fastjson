@@ -11,7 +11,7 @@ public class GenericArrayTypeImpl implements GenericArrayType {
         this.genericComponentType = genericComponentType;
     }
 
-    @Override
+    
     public Type getGenericComponentType() {
         return this.genericComponentType;
     }

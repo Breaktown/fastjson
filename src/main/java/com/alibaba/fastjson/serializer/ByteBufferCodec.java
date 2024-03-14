@@ -11,18 +11,18 @@ import java.nio.ByteBuffer;
 public class ByteBufferCodec implements ObjectSerializer, ObjectDeserializer {
     public final static ByteBufferCodec instance = new ByteBufferCodec();
 
-    @Override
+    
     public <T> T deserialze(DefaultJSONParser parser, Type type, Object fieldName) {
         ByteBufferBean bean = parser.parseObject(ByteBufferBean.class);
         return (T) bean.byteBuffer();
     }
 
-    @Override
+    
     public int getFastMatchToken() {
         return JSONToken.LBRACKET;
     }
 
-    @Override
+    
     public void write(JSONSerializer serializer, Object object, Object fieldName, Type fieldType, int features) throws IOException {
         ByteBuffer byteBuf = (ByteBuffer) object;
 

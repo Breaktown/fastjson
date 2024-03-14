@@ -22,7 +22,6 @@ public class FastJsonFeature implements Feature {
 
     private final static String JSON_FEATURE = FastJsonFeature.class.getSimpleName();
 
-    @Override
     public boolean configure(final FeatureContext context) {
         try {
             final Configuration config = context.getConfiguration();

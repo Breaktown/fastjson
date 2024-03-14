@@ -28,7 +28,7 @@ public class CustomSerializerTest extends TestCase {
     
     public static class ModelSerializer implements ObjectSerializer {
 
-        @Override
+        
         public void write(JSONSerializer serializer, Object object, Object fieldName, Type fieldType,
                           int features) throws IOException {
             Model model = (Model) object;

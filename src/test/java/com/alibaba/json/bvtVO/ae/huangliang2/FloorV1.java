@@ -11,7 +11,7 @@ public class FloorV1 implements Floor {
     public String type;
     public String templateId;
 
-    @Override
+    
     public String getName() {
         return templateId;
     }

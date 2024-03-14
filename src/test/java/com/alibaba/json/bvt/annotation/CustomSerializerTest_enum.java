@@ -39,7 +39,7 @@ public class CustomSerializerTest_enum extends TestCase {
             this.remark = remark;
         }
 
-        @Override
+        
         public void write(JSONSerializer serializer, Object fieldName, Type fieldType,
                           int features) throws IOException {
             JSONObject json = new JSONObject();

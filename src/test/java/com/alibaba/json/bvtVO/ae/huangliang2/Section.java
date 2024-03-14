@@ -15,7 +15,7 @@ public class Section implements Area {
 
     public String templateId;
 
-    @Override
+    
     public String getName() {
         return templateId;
     }

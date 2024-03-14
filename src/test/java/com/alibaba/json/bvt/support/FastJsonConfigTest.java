@@ -62,7 +62,7 @@ public class FastJsonConfigTest extends TestCase {
     private Map<Class<?>, SerializeFilter> classSerializeFilter = new HashMap<Class<?>, SerializeFilter>();
 
     private SerializeFilter serializeFilter = new ValueFilter() {
-        @Override
+        
         public Object process(Object object, String name, Object value) {
             if (value == null) {
                 return "";

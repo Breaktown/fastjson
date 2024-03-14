@@ -62,12 +62,12 @@ public class MappingFastJsonMessageConverterTest extends TestCase {
             this.payload = payload;
         }
 
-        @Override
+        
         public T getPayload() {
             return (T) payload;
         }
 
-        @Override
+        
         public MessageHeaders getHeaders() {
             return null;
         }

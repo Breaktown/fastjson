@@ -26,7 +26,7 @@ import com.alibaba.json.bvt.support.spring.mock.entity.FastJsonTestVO;
 @Service("fastJsonRestful")
 public class FastJsonRestfulServiceTestImpl implements FastJsonRestfulServiceTest {
 
-	@Override
+	
 	public JSONObject test1(FastJsonTestVO vo) {
 
 		JSONObject jsonObj = new JSONObject();
@@ -38,7 +38,7 @@ public class FastJsonRestfulServiceTestImpl implements FastJsonRestfulServiceTes
 		return jsonObj;
 	}
 
-	@Override
+	
 	public JSONObject test2(List<FastJsonParentTestVO> vos) {
 
 		JSONObject jsonObj = new JSONObject();

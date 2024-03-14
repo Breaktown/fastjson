@@ -173,7 +173,7 @@ public class FastJsonHttpMessageConverterTest extends TestCase {
 	}
 
 	private SerializeFilter serializeFilter = new ValueFilter() {
-		@Override
+		
 		public Object process(Object object, String name, Object value) {
 			if (value == null) {
 				return "";

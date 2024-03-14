@@ -11,12 +11,12 @@ public class MixinMergingTest extends TestCase
     }
 
     static class ContactImpl implements Contact {
-        @Override
+        
         public String getCity() { return "Seattle"; }
     }
 
     static class ContactMixin implements Contact {
-        @Override
+        
         @JSONField
         public String getCity() { return null; }
     }

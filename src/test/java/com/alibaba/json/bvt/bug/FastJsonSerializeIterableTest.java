@@ -14,27 +14,35 @@ public class FastJsonSerializeIterableTest {
     @Test
     public void testWithIterable() {
         class Person {
+        	//Atributs d'instance
             private String name;
+            
+            //Constructeur
             public Person(String s) {
                 this.name = s;
             }
+            //Accesseurs
             public String getName() {
                 return name;
             }
         }
+        
         final Person s1 = new Person("fast");
         final Person s2 = new Person("fast");
+        
         Iterable<Person> iterable = new Iterable<Person>() {
-            @Override
+        	
+            
             public Iterator<Person> iterator() {
                 return new Iterator<Person>() {
                     int cursor = 0;
-                    @Override
+                    
+                    
                     public boolean hasNext() {
                         return cursor < 2;
                     }
 
-                    @Override
+                    
                     public Person next() {
                         int val = cursor++;
                         switch (val) {
@@ -47,7 +55,7 @@ public class FastJsonSerializeIterableTest {
                         }
                     }
 
-                    @Override
+                    
                     public void remove() {
                         throw new UnsupportedOperationException();
                     }

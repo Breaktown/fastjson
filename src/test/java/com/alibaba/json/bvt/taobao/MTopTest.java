@@ -22,7 +22,7 @@ public class MTopTest extends TestCase {
 
         ContextValueFilter valueFilter = new ContextValueFilter() {
 
-            @Override
+            
             public Object process(BeanContext context, Object object, String name, Object value) {
 
 

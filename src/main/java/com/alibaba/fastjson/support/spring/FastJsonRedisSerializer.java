@@ -28,7 +28,6 @@ public class FastJsonRedisSerializer<T> implements RedisSerializer<T> {
         this.fastJsonConfig = fastJsonConfig;
     }
 
-    @Override
     public byte[] serialize(T t) throws SerializationException {
         if (t == null) {
             return new byte[0];
@@ -48,7 +47,6 @@ public class FastJsonRedisSerializer<T> implements RedisSerializer<T> {
         }
     }
 
-    @Override
     public T deserialize(byte[] bytes) throws SerializationException {
         if (bytes == null || bytes.length == 0) {
             return null;

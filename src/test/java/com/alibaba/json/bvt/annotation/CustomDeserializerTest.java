@@ -25,7 +25,7 @@ public class CustomDeserializerTest extends TestCase {
     }
     
     public static class ModelDeserializer implements ObjectDeserializer {
-        @Override
+        
         public <T> T deserialze(DefaultJSONParser parser, Type type, Object fieldName) {
             JSONReader reader = new JSONReader(parser);
             
@@ -42,7 +42,7 @@ public class CustomDeserializerTest extends TestCase {
             return (T) model;
         }
 
-        @Override
+        
         public int getFastMatchToken() {
             return 0;
         }

@@ -52,7 +52,7 @@ public class SerializeUsingTest extends TestCase {
             return (T) Integer.valueOf(Integer.parseInt(text));
         }
 
-        @Override
+        
         public int getFastMatchToken() {
             return 0;
         }

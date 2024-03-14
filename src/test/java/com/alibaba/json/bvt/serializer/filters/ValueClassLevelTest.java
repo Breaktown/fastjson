@@ -17,7 +17,7 @@ public class ValueClassLevelTest extends TestCase {
         config.addFilter(ModelA.class, //
                          new ValueFilter() {
 
-                             @Override
+                             
                              public Object process(Object object, String name, Object value) {
                                  return 30001;
                              }
@@ -25,7 +25,7 @@ public class ValueClassLevelTest extends TestCase {
         config.addFilter(ModelB.class, //
                          new ValueFilter() {
 
-                             @Override
+                             
                              public Object process(Object object, String name, Object value) {
                                  return 20001;
                              }
